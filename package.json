@@ -1,12 +1,11 @@
 {
   "name": "trabajo-practico-4-benitez-franco",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "node --watch app.js"
+    "dev": "node --watch app.js"
   },
   "repository": {
     "type": "git",
@@ -15,7 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  
   "bugs": {
     "url": "https://github.com/Franac0a/trabajo-practico-4-benitez-franco/issues"
   },
@@ -25,5 +23,6 @@
     "express": "^5.1.0",
     "mysql2": "^3.14.1",
     "sequelize": "^6.37.7"
-  }
+  },
+  "description": ""
 }

@@ -1,7 +1,7 @@
-import { Sequelize } from "../config/database.js";
+import { sequelize } from "../config/database.js";
 import { DataTypes } from "sequelize";
 
-const Character = Sequelize.define("character",{
+const Character = sequelize.define("character",{
     id:{
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -25,6 +25,7 @@ const Character = Sequelize.define("character",{
     },
     description:{
         type: DataTypes.STRING,
+        allowNull: true
         
     },
 })

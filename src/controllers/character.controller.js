@@ -5,8 +5,8 @@ export const CreateCharacter = async (req, res) => {
 
     if (req.body) {
         for (let valor in req.body) {
-            if (typeof valor === "string") {
-                req.body[valor] = req.body[valor].trim;
+            if (typeof req.body[valor] === "string") {
+                req.body[valor] = req.body[valor].trim();
             }
         }
     }
@@ -32,7 +32,6 @@ export const CreateCharacter = async (req, res) => {
             .status(400)
             .json({ message: "El género debe ser 'Masculino' o 'Femenino'" });
 
-  
 
     //validacion nombre unico
     const nombreUnico = await Character.findOne({ where: { name } });
@@ -61,7 +60,7 @@ export const ActualizacionPersonaje = async (req, res) => {
     if (req.body) {
         for (let propiedad in req.body) {
             if (typeof req.body[propiedad] == "string") {
-                req.body[propiedad] = req.body[propiedad].trim();
+                req.body[propiedad] = req.body[propiedad].trim;
             }
         }
     }
